@@ -1,5 +1,5 @@
 {
-  "name": "react-color-picker",
+  "name": "react-powerful-color-picker",
   "version": "1.0.0",
   "description": "🎨 A small (2.8 KB) color picker component for React and Preact apps. Fast, powerful, well tested, independent, mobile-friendly and accessible.",
   "source": "src/index.ts",
@@ -134,7 +134,7 @@
     "README.md",
     "package.json"
   ],
-  "repository": "Cong-Hieu/react-color-picker",
+  "repository": "Cong-Hieu/react-powerful-color-picker",
   "keywords": [
     "react",
     "color picker",
@@ -155,9 +155,9 @@
   "author": "Vlad Shilov <omgovich@ya.ru>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Cong-Hieu/react-color-picker/issues"
+    "url": "https://github.com/Cong-Hieu/react-powerful-color-picker/issues"
   },
-  "homepage": "https://github.com/Cong-Hieu/react-color-picker",
+  "homepage": "https://github.com/Cong-Hieu/react-powerful-color-picker",
   "peerDependencies": {
     "react": ">=16.8.0",
     "react-dom": ">=16.8.0"
