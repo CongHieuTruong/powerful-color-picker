@@ -1,16 +1,16 @@
 <div align="center">
   <a href="https://omgovich.github.io/react-colorful">
-    <img src="demo/src/assets/composable.png" width="745" height="486" alt="react-powerful-color-picker" />
+    <img src="demo/src/assets/composable.png" width="745" height="486" alt="powerful-color-picker" />
   </a>
 </div>
 
 <div align="center">
-  <strong>react-powerful-color-picker</strong> is a tiny color picker component for React and Preact apps.
+  <strong>powerful-color-picker</strong> is a tiny color picker component for React and Preact apps.
 </div>
 
 ## Features
 
-- 🗜 **Small**: Just 2,8 KB gzipped ([13x lighter](#why-react-powerful-color-picker) than **react-color**).
+- 🗜 **Small**: Just 2,8 KB gzipped ([13x lighter](#why-powerful-color-picker) than **react-color**).
 - 🌳 **Tree-shakeable**: Only the parts you use will be imported into your app's bundle.
 - 🚀 **Fast**: Built with hooks and functional components only.
 - 🛡 **Bulletproof**: Written in strict TypeScript and has 100% test coverage.
@@ -36,21 +36,21 @@
 - [TypeScript Support](#typescript-support)
 - [Usage with Preact](#usage-with-preact)
 - [Browser Support](#browser-support)
-- [Why react-powerful-color-picker?](#why-react-powerful-color-picker)
-- [Projects using react-powerful-color-picker](#projects-using-react-powerful-color-picker)
+- [Why powerful-color-picker?](#why-powerful-color-picker)
+- [Projects using powerful-color-picker](#projects-using-powerful-color-picker)
 
 ## Getting Started
 
 Install via npm:
 
 ```
-npm install react-powerful-color-picker
+npm install powerful-color-picker
 ```
 
 Using
 
 ```js
-import { HexColorPicker } from "react-powerful-color-picker";
+import { HexColorPicker } from "powerful-color-picker";
 
 const YourComponent = () => {
   const [color, setColor] = useState("#aabbcc");
@@ -86,7 +86,7 @@ We provide 12 additional color picker components for different color models, unl
 #### Code example
 
 ```js
-import { RgbColorPicker } from "react-powerful-color-picker";
+import { RgbColorPicker } from "powerful-color-picker";
 
 const YourComponent = () => {
   const [color, setColor] = useState({ r: 50, g: 100, b: 150 });
@@ -100,7 +100,7 @@ const YourComponent = () => {
 
 ## Customization
 
-The easiest way to tweak **react-powerful-color-picker** is to create another stylesheet to override the default styles.
+The easiest way to tweak **powerful-color-picker** is to create another stylesheet to override the default styles.
 
 ```css
 .your-component .react-colorful {
@@ -124,13 +124,13 @@ The easiest way to tweak **react-powerful-color-picker** is to create another st
 
 ## How to paste or type a color?
 
-As you probably noticed the color picker itself does not include an input field, but do not worry if you need one. **react-powerful-color-picker** is a modular library that allows you to build any picker you need. Since `v2.1` we provide an additional component that works perfectly in pair with our color picker.
+As you probably noticed the color picker itself does not include an input field, but do not worry if you need one. **powerful-color-picker** is a modular library that allows you to build any picker you need. Since `v2.1` we provide an additional component that works perfectly in pair with our color picker.
 
 <details>
   <summary>How to use <code>HexColorInput</code></summary><br />
 
 ```js
-import { HexColorPicker, HexColorInput } from "react-powerful-color-picker";
+import { HexColorPicker, HexColorInput } from "powerful-color-picker";
 
 const YourComponent = () => {
   const [color, setColor] = useState("#aabbcc");
@@ -169,7 +169,7 @@ const YourComponent = () => {
 
 ## TypeScript Support
 
-**react-powerful-color-picker** supports TypeScript and ships with types in the library itself; no need for any other install.
+**powerful-color-picker** supports TypeScript and ships with types in the library itself; no need for any other install.
 
 <details>
   <summary>How you can get the most from our TypeScript support</summary><br />
@@ -177,7 +177,7 @@ const YourComponent = () => {
 While not only typing its own functions and variables, it can also help you type yours. Depending on the component you are using, you can also import the type that is associated with the component. For example, if you are using our HSL color picker component, you can also import the `HSL` type.
 
 ```ts
-import { HslColorPicker, HslColor } from "react-powerful-color-picker";
+import { HslColorPicker, HslColor } from "powerful-color-picker";
 
 const myHslValue: HslColor = { h: 0, s: 0, l: 0 };
 ```
@@ -188,14 +188,14 @@ Take a look at [Supported Color Models](#supported-color-models) for more inform
 
 ## Usage with Preact
 
-**react-powerful-color-picker** will work flawlessly with Preact out-of-the-box if you are using [WMR](https://github.com/preactjs/wmr), [Preact-CLI](https://github.com/preactjs/preact-cli), [NextJS with Preact](https://github.com/vercel/next.js/tree/canary/examples/using-preact), or a few other tools/boilerplates thanks to aliasing.
+**powerful-color-picker** will work flawlessly with Preact out-of-the-box if you are using [WMR](https://github.com/preactjs/wmr), [Preact-CLI](https://github.com/preactjs/preact-cli), [NextJS with Preact](https://github.com/vercel/next.js/tree/canary/examples/using-preact), or a few other tools/boilerplates thanks to aliasing.
 
 If you are using another solution, please refer to the [Aliasing React to Preact](https://preactjs.com/guide/v10/getting-started#aliasing-react-to-preact) section of the Preact documentation.
 
 <details>
   <summary>Preact + Typescript</summary><br />
 
-**react-powerful-color-picker**, like all other React + TS projects, can potentially cause issues in a Preact + TS application if you have the `@types/react` package installed, either as a direct dependency or a dependency of a dependency. For example, the Preact TS template comes with `@types/enzyme` which has `@types/react` as a dependency.
+**powerful-color-picker**, like all other React + TS projects, can potentially cause issues in a Preact + TS application if you have the `@types/react` package installed, either as a direct dependency or a dependency of a dependency. For example, the Preact TS template comes with `@types/enzyme` which has `@types/react` as a dependency.
 
 To fix this, create a `declaration.d.ts` file or add to your existing:
 
@@ -213,36 +213,36 @@ declare global {
 }
 ```
 
-This will correct the types and allow you to use **react-powerful-color-picker** along with many other React + TS libraries in your Preact + TS application.
+This will correct the types and allow you to use **powerful-color-picker** along with many other React + TS libraries in your Preact + TS application.
 
 </details>
 
 ## Browser Support
 
-It would be an easier task to list all of the browsers and versions that **react-powerful-color-picker** does not support! We regularly test against browser versions going all the way back to 2013 and this includes IE11.
+It would be an easier task to list all of the browsers and versions that **powerful-color-picker** does not support! We regularly test against browser versions going all the way back to 2013 and this includes IE11.
 
-**react-powerful-color-picker** works out-of-the-box for most browsers, regardless of version, and only requires an `Object.assign` polyfill be provided for full IE11 support.
+**powerful-color-picker** works out-of-the-box for most browsers, regardless of version, and only requires an `Object.assign` polyfill be provided for full IE11 support.
 
-## Why react-powerful-color-picker?
+## Why powerful-color-picker?
 
 Today each dependency drags more dependencies and increases your project’s bundle size uncontrollably. But size is very important for everything that intends to work in a browser.
 
-**react-powerful-color-picker** is a simple color picker for those who care about their bundle size and client-side performance. It is fast and lightweight because:
+**powerful-color-picker** is a simple color picker for those who care about their bundle size and client-side performance. It is fast and lightweight because:
 
 - Has no dependencies (no risks in terms of vulnerabilities, no unexpected bundle size changes);
 - Built with hooks and functional components only (no classes and polyfills for them);
 - Ships only a minimal amount of manually optimized color conversion algorithms (while most of the popular pickers import entire color manipulation libraries that increase the bundle size by more than 10 KB and make your app slower).
 
-To show you the problem that **react-powerful-color-picker** is trying to solve, we have performed a simple benchmark (using [bundlephobia.com](https://bundlephobia.com)) against popular React color picker libraries:
+To show you the problem that **powerful-color-picker** is trying to solve, we have performed a simple benchmark (using [bundlephobia.com](https://bundlephobia.com)) against popular React color picker libraries:
 
-| Name                            | Bundle size                                                                                                                        | Bundle size (gzip)                                                                                                                    | Dependencies                                                                                                                                    |
-| ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
-| **react-powerful-color-picker** | [![](https://badgen.net/bundlephobia/min/react-colorful?color=6ead0a&label=)](https://bundlephobia.com/result?p=react-colorful)    | [![](https://badgen.net/bundlephobia/minzip/react-colorful?color=6ead0a&label=)](https://bundlephobia.com/result?p=react-colorful)    | [![](https://badgen.net/bundlephobia/dependency-count/react-colorful?color=6ead0a&label=)](https://bundlephobia.com/result?p=react-colorful)    |
-| react-color                     | [![](https://badgen.net/bundlephobia/min/react-color?color=red&label=)](https://bundlephobia.com/result?p=react-color)             | [![](https://badgen.net/bundlephobia/minzip/react-color?color=red&label=)](https://bundlephobia.com/result?p=react-color)             | [![](https://badgen.net/bundlephobia/dependency-count/react-color?color=red&label=)](https://bundlephobia.com/result?p=react-color)             |
-| react-input-color               | [![](https://badgen.net/bundlephobia/min/react-input-color?color=red&label=)](https://bundlephobia.com/result?p=react-input-color) | [![](https://badgen.net/bundlephobia/minzip/react-input-color?color=red&label=)](https://bundlephobia.com/result?p=react-input-color) | [![](https://badgen.net/bundlephobia/dependency-count/react-input-color?color=red&label=)](https://bundlephobia.com/result?p=react-input-color) |
-| rc-color-picker                 | [![](https://badgen.net/bundlephobia/min/rc-color-picker?color=red&label=)](https://bundlephobia.com/result?p=rc-color-picker)     | [![](https://badgen.net/bundlephobia/minzip/rc-color-picker?color=red&label=)](https://bundlephobia.com/result?p=rc-color-picker)     | [![](https://badgen.net/bundlephobia/dependency-count/rc-color-picker?color=red&label=)](https://bundlephobia.com/result?p=rc-color-picker)     |
+| Name                      | Bundle size                                                                                                                        | Bundle size (gzip)                                                                                                                    | Dependencies                                                                                                                                    |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------- |
+| **powerful-color-picker** | [![](https://badgen.net/bundlephobia/min/react-colorful?color=6ead0a&label=)](https://bundlephobia.com/result?p=react-colorful)    | [![](https://badgen.net/bundlephobia/minzip/react-colorful?color=6ead0a&label=)](https://bundlephobia.com/result?p=react-colorful)    | [![](https://badgen.net/bundlephobia/dependency-count/react-colorful?color=6ead0a&label=)](https://bundlephobia.com/result?p=react-colorful)    |
+| react-color               | [![](https://badgen.net/bundlephobia/min/react-color?color=red&label=)](https://bundlephobia.com/result?p=react-color)             | [![](https://badgen.net/bundlephobia/minzip/react-color?color=red&label=)](https://bundlephobia.com/result?p=react-color)             | [![](https://badgen.net/bundlephobia/dependency-count/react-color?color=red&label=)](https://bundlephobia.com/result?p=react-color)             |
+| react-input-color         | [![](https://badgen.net/bundlephobia/min/react-input-color?color=red&label=)](https://bundlephobia.com/result?p=react-input-color) | [![](https://badgen.net/bundlephobia/minzip/react-input-color?color=red&label=)](https://bundlephobia.com/result?p=react-input-color) | [![](https://badgen.net/bundlephobia/dependency-count/react-input-color?color=red&label=)](https://bundlephobia.com/result?p=react-input-color) |
+| rc-color-picker           | [![](https://badgen.net/bundlephobia/min/rc-color-picker?color=red&label=)](https://bundlephobia.com/result?p=rc-color-picker)     | [![](https://badgen.net/bundlephobia/minzip/rc-color-picker?color=red&label=)](https://bundlephobia.com/result?p=rc-color-picker)     | [![](https://badgen.net/bundlephobia/dependency-count/rc-color-picker?color=red&label=)](https://bundlephobia.com/result?p=rc-color-picker)     |
 
-## Projects using react-powerful-color-picker
+## Projects using powerful-color-picker
 
 <details>
   <summary><a href="https://storybook.js.org/">Storybook</a> — the most widely used open-source tool for developing UI components</summary>
