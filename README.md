@@ -1,3 +1,4 @@
+# Powerful Color Picker
 <div align="center">
   <a href="https://omgovich.github.io/react-colorful">
     <img src="demo/src/assets/composable.png" width="745" height="486" alt="powerful-color-picker" />
@@ -25,6 +26,7 @@
 
 - [HEX Color Picker (CodeSandbox)](https://codesandbox.io/s/react-colorful-demo-u5vwp)
 - [RGBA Color Picker (CodeSandbox)](https://codesandbox.io/s/react-colorful-rgb-o9q0t)
+- [Npm Package](https://www.npmjs.com/package/powerful-color-picker)
 
 ## Table of Contents
 
