@@ -5,7 +5,7 @@
 </div>
 
 <div align="center">
-  [Powerful Color Picker](https://www.npmjs.com/package/powerful-color-picker) is a tiny color picker component for React and Preact apps.
+  <strong>Powerful Color Picker</strong> is a tiny color picker component for React and Preact apps.
 </div>
 
 ## Features
