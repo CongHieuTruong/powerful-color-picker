@@ -1,6 +1,6 @@
 {
   "name": "powerful-color-picker",
-  "version": "1.0.0",
+  "version": "1.6.0",
   "description": "🎨 A small (2.8 KB) color picker component for React and Preact apps. Fast, powerful, well tested, independent, mobile-friendly and accessible.",
   "source": "src/index.ts",
   "main": "dist/index.js",
