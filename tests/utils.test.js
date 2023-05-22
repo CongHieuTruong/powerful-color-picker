@@ -55,7 +55,6 @@ it("Converts HSVA to HEX", () => {
 
 it("Converts HSVA to HSLA", () => {
   let test = (input, output) => expect(hsvaToHsla(input)).toMatchObject(output);
-
   test({ h: 0, s: 0, v: 100, a: 1 }, { h: 0, s: 0, l: 100, a: 1 });
   test({ h: 60, s: 100, v: 100, a: 1 }, { h: 60, s: 100, l: 50, a: 1 });
   test({ h: 0, s: 100, v: 100, a: 1 }, { h: 0, s: 100, l: 50, a: 1 });
