@@ -1,7 +1,7 @@
 # Powerful Color Picker
 
 <div align="center">
-  <a href="https://omgovich.github.io/react-colorful">
+  <a href="https://codesandbox.io/s/powerful-color-picker-etq9g0?file=/src/App.js">
     <img src="demo/src/assets/composable.png" width="745" height="486" alt="powerful-color-picker" />
   </a>
 </div>
